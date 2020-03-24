@@ -1,5 +1,7 @@
-body
-  font-family: sans-serif
+*
+  box-sizing: border-box
+  body
+  font-family: 'Museo Sans Light'
 img
   max-width: 100%
 .container
@@ -19,3 +21,18 @@ img
     background-color: $main-color
     border: none
     padding: 18px 30px
+    &:hover
+      background-color: lighten($main-color,10%)
+      cursor: pointer
+.section
+  padding: 90px 0
+  &-title
+    font-size: 24px
+  &-subtitle
+    font-size: 16px
+    display: block
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px 
